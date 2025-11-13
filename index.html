@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gul's Kitchen — Profesyonel Tanıtım</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Intro overlay -->
+    <div class="intro-overlay" id="introOverlay">
+      <img
+        src="images/logo.png"
+        alt="Gul's Kitchen"
+        class="intro-logo"
+        id="introLogo"
+      />
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+      <div class="nav-left">
+        <img
+          src="images/logo.png"
+          alt="Gul's Kitchen"
+          class="logo hidden"
+          id="navLogo"
+        />
+        <nav class="nav-links" aria-label="Ana menü">
+          <a
+            href="https://www.nefisyemektarifleri.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Yemek Tarifleri</a
+          >
+          <a
+            href="https://www.ikea.com.tr/en/category/home-decoration"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Dekorasyon</a
+          >
+          <a
+            href="https://www.ikea.com.tr/en/category/home-decoration"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Aksesuarlar</a
+          >
+          <a
+            href="https://www.ikea.com.tr/en/category/home-decoration"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Alışveriş</a
+          >
+        </nav>
+      </div>
+
+      <div class="controls">
+        <button class="theme-toggle" id="themeToggle" title="Tema değiştir">
+          ☀️ / 🌙
+        </button>
+        <div class="socials">
+          <a href="#" aria-label="instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-inner" id="heroInner" data-aos="fade-up">
+          <span class="kicker">Sinan Gül Yılmaz - Masterchef 2019</span>
+          <h1 id="heroTitle" class="hero-title">
+            Birbirinden Özel Tarifler & İç Mekân İlhamları
+          </h1>
+          <p class="lead">
+            Uzman şefimiz ve tasarımcı ekibimizle hazırlanmış tarifler ve
+            dekorasyon fikirleri. Videolar, tarif kartları ve adım adım
+            rehberlerle mutfağınızı ve evinizi zenginleştirin.
+          </p>
+
+          <div class="cta-row">
+            <a
+              class="btn primary"
+              href="https://www.nefisyemektarifleri.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >YouTube & Tarifler</a
+            >
+            <a class="btn" href="#recipes">Tariflere Göz At</a>
+          </div>
+        </div>
+
+        <div class="cards" id="cardsCol" data-aos="fade-left">
+          <article class="card">
+            <h3>Profesyonel İpuçları</h3>
+            <p>
+              Malzeme seçiminden servis önerilerine kadar adım adım profesyonel
+              ipuçları.
+            </p>
+            <p>
+              <a
+                href="https://biusta.com.tr/blog/59/modern-ev-tasarimi-icin-tadilat-tamirat-ipuclari"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Detaylar →</a
+              >
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>İç Mimari Rehberi</h3>
+            <p>
+              Alanında uzman iç mimarlar tarafından hazırlanmış dekorasyon
+              tavsiyeleri.
+            </p>
+            <p>
+              <a
+                href="https://icmimaritasarim.com/ic-mimariye-baslangic-rehberi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Detaylar →</a
+              >
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Özel Alışveriş Rehberi</h3>
+            <p>
+              Mutfağınız ve eviniz için seçilmiş kaliteli aksesuar ve ürün
+              önerileri.
+            </p>
+            <p>
+              <a
+                href="https://raschelhome.com/blog/ilk-evini-dizenler-icin-alisveris-rehberi-gerekli-urunler-listesi"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Detaylar →</a
+              >
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="features" id="recipes">
+        <div class="feature" data-aos="zoom-in">
+          <h4>Adım Adım Tarif Kartları</h4>
+          <p>
+            Her tarif için kolay takip edilebilen kartlar ve ihtiyacınız olan
+            malzemeler listesi.
+          </p>
+        </div>
+
+        <div class="feature" data-aos="zoom-in" data-aos-delay="80">
+          <h4>Video Dersler</h4>
+          <p>
+            Kısa ve uzun formatlı video derslerle pişirme tekniklerini öğrenin.
+          </p>
+        </div>
+
+        <div class="feature" data-aos="zoom-in" data-aos-delay="160">
+          <h4>Hızlı Alışveriş Listesi</h4>
+          <p>
+            Tarife göre otomatik oluşturulabilen, çıktı alınabilir alışveriş
+            listeleri.
+          </p>
+        </div>
+
+        <div class="feature" data-aos="zoom-in" data-aos-delay="240">
+          <h4>Dekorasyon Paketleri</h4>
+          <p>
+            Farklı bütçe ve zevklere uygun dekorasyon paketleri ve uygulama
+            rehberleri.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <strong>Gul's Kitchen</strong>
+        <div class="small">© <span id="year"></span> Tüm hakları saklıdır.</div>
+      </div>
+      <div class="small">
+        Bizi takip edin:
+        <span class="socials">
+          <a href="#" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="youtube"><i class="fab fa-youtube"></i></a>
+        </span>
+      </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
